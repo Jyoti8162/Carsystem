@@ -11,16 +11,12 @@ namespace CarSystemProjectAdmin.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
-    public partial class AdminUser
+    
+    public partial class CarSoldHistory
     {
-        public int Id { get; set; }
-        [Display(Name ="Admin Id")]
-        public string AdminID { get; set; }
-        [Display(Name = "Password")]
-        [Required]
-        [DataType(DataType.Password)]
-        public string AdminPassword { get; set; }
+        public int CarNo { get; set; }
+        public string CarName { get; set; }
+        public string SellerName { get; set; }
+        public string BuyerName { get; set; }
     }
 }

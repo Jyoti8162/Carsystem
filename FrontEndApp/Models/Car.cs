@@ -12,7 +12,6 @@ namespace FrontEndApp.Models
     using System;
     using System.Collections.Generic;
     using System.Web;
-
     public partial class Car
     {
         public string CarNo { get; set; }
@@ -21,12 +20,13 @@ namespace FrontEndApp.Models
         public string CarModel { get; set; }
         public string CarYear { get; set; }
         public string CarType { get; set; }
+        public Nullable<int> CarPrice { get; set; }
         public Nullable<int> NoOfOwners { get; set; }
         public Nullable<bool> CarVerified { get; set; }
         public Nullable<bool> CarSold { get; set; }
         public Nullable<int> CarUid { get; set; }
         public string City { get; set; }
-
         public HttpPostedFileBase ImageFile { get; set; }
+
     }
 }

@@ -26,7 +26,9 @@ namespace FrontEndApp.Models
         }
     
         public virtual DbSet<Car> Cars { get; set; }
+        public virtual DbSet<CarSoldHistory> CarSoldHistories { get; set; }
         public virtual DbSet<UserData> UserDatas { get; set; }
 
+        public System.Data.Entity.DbSet<FrontEndApp.Models.LoginModel> LoginModels { get; set; }
     }
 }

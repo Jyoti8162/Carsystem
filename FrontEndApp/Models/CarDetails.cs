@@ -13,6 +13,7 @@ namespace FrontEndApp.Models
         public string CarModel { get; set; }
         public string CarYear { get; set; }
         public string CarType { get; set; }
+        public Nullable<int> CarPrice { get; set; }
         public Nullable<int> NoOfOwners { get; set; }
         public Nullable<bool> CarVerified { get; set; }
         public Nullable<bool> CarSold { get; set; }

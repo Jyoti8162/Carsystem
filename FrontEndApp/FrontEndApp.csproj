@@ -139,6 +139,9 @@
       <DependentUpon>UserModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CarDetails.cs" />
+    <Compile Include="Models\CarSoldHistory.cs">
+      <DependentUpon>UserModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserData.cs">
@@ -170,9 +173,21 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\about.jpg" />
     <Content Include="Images\Admin.png" />
     <Content Include="Images\Bglogin.jpg" />
+    <Content Include="Images\car.jpg" />
+    <Content Include="Images\car1.jpg" />
+    <Content Include="Images\car2.jpg" />
+    <Content Include="Images\car3.jpg" />
     <Content Include="Images\carloginimg.jpg" />
+    <Content Include="Images\jp.jpg" />
+    <Content Include="Images\loginpage.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\osp.jpg" />
+    <Content Include="Images\slide1.jpg" />
+    <Content Include="Images\slide2.jpg" />
+    <Content Include="Images\slide3.jpg" />
     <Content Include="Models\UserModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UserModel.edmx</DependentUpon>
@@ -285,8 +300,10 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

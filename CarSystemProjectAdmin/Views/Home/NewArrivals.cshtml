@@ -51,10 +51,9 @@
         {
             <tr>
                 <td>@item.CarNo</td>
-                <td>@item.CarImage</td>
+                <td><img src="@Html.DisplayFor(modelitem=>item.CarImage)" style="width: 100px; height:100px" /></td>
                 <td>@item.CarName</td>
                 <td>@item.CarModel</td>
-
                 <td>@item.CarYear</td>
                 <td>@item.CarType</td>
                 <td>@item.NoOfOwners</td>

@@ -12,7 +12,7 @@ namespace CarSystemProjectAdmin.Controllers
     public class HomeController : Controller
     {
 
-        CarSystemEntities carSystemEntities=new CarSystemEntities();
+        CarSystemEntities1 carSystemEntities=new CarSystemEntities1();
         public ActionResult Index()
         {
             return View();
@@ -46,7 +46,7 @@ namespace CarSystemProjectAdmin.Controllers
 
         //In Admin Panel All the Users Data first shown default
         [HttpGet]
-        public ActionResult AdminPanel(string SearchBy, string SearchVal)
+        public  ActionResult AdminPanel(string SearchBy, string SearchVal)
         {
             try
             {
